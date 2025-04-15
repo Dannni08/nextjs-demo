@@ -1,4 +1,9 @@
+// app: containes all the routes, components and logic for your application
+// app/lib: Contains functions used in the application , such as reusable utility functions and data fetching functions
+// app/ui: contains all the UI components for the applications such as cards , tables, forms. 
+
 import postgres from 'postgres';
+// imports the default export  
 import {
   CustomerField,
   CustomersTableType,
@@ -8,6 +13,7 @@ import {
   Revenue,
 } from './definitions';
 import { formatCurrency } from './utils';
+//importing definitions such as what will the input accept such as string, number, boolian. 
 
 const sql = postgres(process.env.POSTGRES_URL!, { ssl: 'require' });
 
