@@ -3,7 +3,7 @@
 // app/ui: contains all the UI components for the applications such as cards , tables, forms. 
 
 import postgres from 'postgres';
-// imports the default export  
+// imports the default export   -
 import {
   CustomerField,
   CustomersTableType,
